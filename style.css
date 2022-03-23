@@ -1,0 +1,19 @@
+h1{
+    color: blueviolet;
+}
+body{
+    background-color: aqua;
+}
+p{
+    color: blueviolet;
+}
+img{
+    height: 50vh;
+    margin: 100px;
+    position: relative;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: large;
+    float: left;
+
+}
