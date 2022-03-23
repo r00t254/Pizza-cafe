@@ -8,7 +8,7 @@ Mary Auma
 .CSS
 .JS
 # Known Bugs
-
+No known bugs
 # Lincense
 MIT License
 
