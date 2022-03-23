@@ -8,6 +8,7 @@ function constructor(size,toppins,crust,order,quantity){
 $(document).ready(function(){
   $("#submit").click(function(event){
     event.preventDefault();
+    
 
 
 var size =$("#size option:select").val();
@@ -21,37 +22,26 @@ $("#size").html($("#size option:selected").text() + " - " + size);
   $("#toppins").html($("#toppins option:selected").text() + " - " + toppins);
   $("#crust").html($("#crust option:selected").text() + " - " + crust);
   $("#quantity").html(quantity);
-  $('#button').click(function()
+  $('#submit').click(function()
    {
     var size = $("#size option:selected").val();
     var toppins = $("#toppins option:selected").val();
     var crust = $(".crust option:selected").val();
     var quantity = parseInt(size) + parseInt(toppins) + parseInt(crust);
     order = 1;
-    amountt = 0;
+    amount = 0;
     var newPizza = new constructor(size, toppins, crust, total, quantity);
     var newRow = '<tr><th scope="row">' + newPizza.ordernumber + '</th><td id="pizzaSize">' + $(".pizzaSize option:selected").text() + " - " + newPizza.size + '</td><td id="pizzaTopping">' + $(".pizzaTopping option:selected").text() + " - " + newPizza.toppings + '</td><td id="pizzaCrust">' + $(".pizzaCrust option:selected").text() + " - " + newPizza.crust + '</td><td id="quantity">' + newPizza.quantity + '</td></tr>'
     $("#pizza").append(newRow);
   });
-  // $("#button").click(function(){
-  //   if (quantity === 0) {
-  //     prompt("Enter the place where Your pizza will be delivered.");
-  //     alert("Thank for choosing pizza I your order will be delivered in the next 20 minutes with a total cost of ksh" + total2.initialCost());
+
+  $("#submit").click(function(){
+    if (quantity === 0) {
+      prompt("Enter the place where Your pizza will be delivered.");
+      alert("Thank for choosing pizza I your order will be delivered in the next 20 minutes with a total cost of ksh" + total2.initialCost());
     
-  //   } else if (quantity === 1) {
+    } else if (quantity === 1) {
     
-  //     alert("Thank you for choosing pizza Inn your cost is ksh " + total3.initialCost());
-})
-})
-
-
-
-
-
-
-
-
-
-
-
-
+      alert("Thank you for choosing pizza Inn your cost is ksh " + total3.initialCost());
+    }
+});
