@@ -15,5 +15,7 @@ img{
     flex-wrap: wrap;
     font-size: large;
     float: left;
-
+}
+h1{
+    text-align: center;
 }
