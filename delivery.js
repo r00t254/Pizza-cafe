@@ -1,29 +1,27 @@
-function constructor(size,toppins,crust,order,quantity){
+function Pizza(size,toppins,crust,order,quantity){
   this.size = size;
   this.toppins = toppins;
   this.crust = crust;
-  this.order = ordernumber;
+  this.order = order;
   this.quantity = quantity;
   }
 $(document).ready(function(){
-  $("#submit").click(function(event){
+  $("#pizza form.").submit(function(event){
     event.preventDefault();
     
+    var size =$("#size option:select").val();
+    var crust =$("#crust option:select").val();
+    var toppins =$("#toppins option:select").val();
+    var ordernumber =$("ordernumber option:select").val();
+    var quantity =parseInt(size)*parseInt(crust)*parseInt(toppins)
 
 
-var size =$("#size option:select").val();
-var crust =$("#crust option:select").val();
-var toppins =$("#toppins option:select").val();
-var ordernumber =$("ordernumber option:select").val();
-var quantity =parseInt(size)*parseInt(crust)*parseInt(toppins)
-
-
-$("#size").html($("#size option:selected").text() + " - " + size);
-  $("#toppins").html($("#toppins option:selected").text() + " - " + toppins);
-  $("#crust").html($("#crust option:selected").text() + " - " + crust);
-  $("#quantity").html(quantity);
-  $('#submit').click(function()
-   {
+    $("#size").html($("#size option:selected").text() + " - " + size);
+    $("#toppins").html($("#toppins option:selected").text() + " - " + toppins);
+    $("#crust").html($("#crust option:selected").text() + " - " + crust);
+    $("#quantity").html(quantity);
+     $('#submit').click(function()
+      {
     var size = $("#size option:selected").val();
     var toppins = $("#toppins option:selected").val();
     var crust = $(".crust option:selected").val();
