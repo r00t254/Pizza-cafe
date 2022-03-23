@@ -8,7 +8,7 @@ Mary Auma
 # Technology use 
 .HTML
 .CSS
-.JS
+.
 # Known Bugs
 No known bugs
 # Lincense
