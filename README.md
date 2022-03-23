@@ -4,7 +4,7 @@ This is a webpage that deliver pizza and place orders.It allow a user to order m
 # Author
 Mary Auma
 # Technology use 
-.HTML
+.
 .CSS
 .JS
 # Known Bugs
