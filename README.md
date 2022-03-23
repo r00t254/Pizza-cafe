@@ -7,6 +7,8 @@ Mary Auma
 .HTML
 .CSS
 .JS
+# Known Bugs
+
 # Lincense
 MIT License
 
