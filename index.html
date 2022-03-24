@@ -27,35 +27,62 @@
     
                 <img src="chicken.png" alt="" sizes="small" srcset="chicken flavour">
     
-                <form id="pizza form">
+                <form id="pizza-form">
                     <label class="label">Menu</label><br><br>
     
-                    <label for="label">choose flavor</label><br>
-                    <select class="browser-default custom-select" id="flavor">
+                    <!-- <label for="label">choose flavor</label><br>
+                    <select class="browser-default custom-select f">
                         <option label="Meat Deluxe-ksh 250" value="250"></option>
                         <option label="Chicken -ksh 500" value="500"></option>
                         <option label="Veg Fear -ksh 300" value="300"></option>
-                    </select><br>
+                    </select><br> -->
                     <label for="label">choose size</label><br>
-                    <select class="browser-default custom-select" id="size">
+                    <select class="browser-default custom-select size">
                         <option label="small ksh 500" value="500">small</option>
                         <option label="medium ksh 800" value="800">medium</option>
                         <option label="large ksh 1200" value="1200">large</option>
                     </select><br>
                     <label for="label">choose crust</label><br>
-                    <select class="browser-default custom-select" id="crust">
+                    <select class="browser-default custom-select crust" >
                         <option label="Neapolitan ksh 150" value="150"></option>
                         <option label="Gluten free ksh 200" value="200"></option>
                         <option label="cauliflower ksh 250" value="250"></option>
                     </select><br>
-                    <label for="label">choose toppins</label><br>
-                    <select class="browser-default custom-select" id="toppins">
+                    <label for="label">choose toppings</label><br>
+                    <select class="browser-default custom-select toppings" >
                         <option label="mushrooms ksh 100" value="100"></option>
                         <option label="Black olivers ksh 150" value="150"></option>
                         <option label="pepperoni ksh 200" value="200"></option>
                     </select>
-                    <button type="submit">Submit</button>
+                    <button type="submit" class="btn bg-dark" id="order-btn">Submit</button>
+
+                    <button type="submit" class="btn bg-success" id="add-btn">Order More</button>
+
+                    <button type="submit" class="btn bg-success" id="checkout">Checkout</button>
                 </form>
+            </div>
+
+            <div class="col">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Order No.</th>
+                        <th scope="col">Pizza Size</th>
+                        <th scope="col">Toppings</th>
+                        <th scope="col">Crust</th>
+                        <th scope="col">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody id="pizza">
+                      <tr>
+                        <th scope="row">1</th>
+                        <td id="size"></td>
+                        <td id="toppings"></td>
+                        <td id="crust"></td>
+                        <td id="total"></td>
+                      </tr>
+                    </tbody>
+                  </table>
             </div>
 
         </div>
